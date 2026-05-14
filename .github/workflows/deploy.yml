@@ -22,5 +22,10 @@ jobs:
             cd /home/ubuntu/Devops-demo
             git pull origin main
             npm install
-            npx expo export --platform web
+            # 1. Force a fresh build by clearing the old cache
+            # 2. Use sudo to avoid the 'Permission Denied' error
+            sudo npx expo export --platform web --clear
+            # 3. Ensure Nginx has permission to read the newly created files
+            sudo chmod -R 755 /home/ubuntu/Devops-demo/dist
+            # 4. Restart Nginx to pick up any changes
             sudo systemctl restart nginx
