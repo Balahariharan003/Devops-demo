@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   buttonText: {
-    color: '#284b63',
+    color: '#ab4f22',
     fontSize: 18,
     fontWeight: '700',
   },
