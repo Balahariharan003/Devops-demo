@@ -9,7 +9,7 @@ export default function LoginScreen({ navigation, onLogin }: any) {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <LinearGradient colors={['#284b63', '#353535']} style={styles.container}>
+    <LinearGradient colors={['#c77523', '#353535']} style={styles.container}>
       <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.inner}>
         
         <View style={styles.header}>
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   buttonText: {
-    color: '#ab4f22',
+    color: '#284b63',
     fontSize: 18,
     fontWeight: '700',
   },
